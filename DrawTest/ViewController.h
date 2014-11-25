@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController {
+  BOOL touchesMoved;
+  CGPoint lastPoint;
+  CGFloat brush;
+  CGFloat red;
+  CGFloat green;
+  CGFloat blue;
+  CGFloat opacity;
+  UIWindow *_secondWindow;
+  UIImageView *externalImageView;
+}
 
 @end
 
