@@ -128,6 +128,7 @@
     // [whiteField release];
     
     externalImageView = [[UIImageView alloc] initWithFrame:screenBounds];
+    externalImageView.image = self.imageView.image;
     [whiteField addSubview:externalImageView];
     
     // Go ahead and show the window.
