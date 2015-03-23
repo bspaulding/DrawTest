@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,13 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c5Z-Hh-z8x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c5Z-Hh-z8x">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxL-sN-5VT">
+                                <rect key="frame" x="16" y="20" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtX-Os-kpx">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B9E-lP-dx6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="c5Z-Hh-z8x" secondAttribute="trailing" constant="-16" id="3pd-eX-0iw"/>
+                            <constraint firstItem="YtX-Os-kpx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="CFF-Tf-q6H"/>
+                            <constraint firstItem="PxL-sN-5VT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="EBK-1s-u5i"/>
+                            <constraint firstItem="PxL-sN-5VT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="KlN-Lc-gfD"/>
+                            <constraint firstItem="PxL-sN-5VT" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="VWo-lf-Zt8"/>
+                            <constraint firstItem="c5Z-Hh-z8x" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="cvU-Lm-Nts"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="c5Z-Hh-z8x" secondAttribute="bottom" id="d61-wF-QnZ"/>
+                            <constraint firstItem="YtX-Os-kpx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="puz-4m-bq7"/>
+                            <constraint firstAttribute="centerX" secondItem="PxL-sN-5VT" secondAttribute="centerX" id="tTU-2Q-bh0"/>
+                            <constraint firstItem="c5Z-Hh-z8x" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="u6F-VF-z3e"/>
+                            <constraint firstItem="YtX-Os-kpx" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="16" id="uBH-an-wk0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="uBH-an-wk0"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="currentWordLabel" destination="PxL-sN-5VT" id="PxJ-6f-Y9h"/>
                         <outlet property="imageView" destination="c5Z-Hh-z8x" id="HPK-y9-qap"/>
                     </connections>
                 </viewController>

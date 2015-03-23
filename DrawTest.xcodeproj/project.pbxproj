@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6523AFBB1AB0F78600140E11 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6523AFBA1AB0F78600140E11 /* words.txt */; };
+		6523AFBD1AB0FDEA00140E11 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6523AFBC1AB0FDEA00140E11 /* ding.wav */; };
 		65560C731A23CB9000DF7B1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560C721A23CB9000DF7B1B /* main.m */; };
 		65560C761A23CB9000DF7B1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560C751A23CB9000DF7B1B /* AppDelegate.m */; };
 		65560C791A23CB9000DF7B1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560C781A23CB9000DF7B1B /* ViewController.m */; };
@@ -14,6 +16,12 @@
 		65560C7E1A23CB9000DF7B1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65560C7D1A23CB9000DF7B1B /* Images.xcassets */; };
 		65560C811A23CB9000DF7B1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65560C7F1A23CB9000DF7B1B /* LaunchScreen.xib */; };
 		65560C8D1A23CB9100DF7B1B /* DrawTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65560C8C1A23CB9100DF7B1B /* DrawTestTests.m */; };
+		65FDEB531A2503D000AD7E0A /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65FDEB4F1A2503D000AD7E0A /* AcousticModelEnglish.bundle */; };
+		65FDEB541A2503D000AD7E0A /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65FDEB501A2503D000AD7E0A /* AcousticModelSpanish.bundle */; };
+		65FDEB551A2503D000AD7E0A /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FDEB511A2503D000AD7E0A /* OpenEars.framework */; };
+		65FDEB561A2503D000AD7E0A /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FDEB521A2503D000AD7E0A /* Slt.framework */; };
+		65FDEB581A25040000AD7E0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FDEB571A25040000AD7E0A /* AVFoundation.framework */; };
+		65FDEB5A1A25040C00AD7E0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FDEB591A25040C00AD7E0A /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6523AFBA1AB0F78600140E11 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		6523AFBC1AB0FDEA00140E11 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		65560C6D1A23CB9000DF7B1B /* DrawTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65560C711A23CB9000DF7B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65560C721A23CB9000DF7B1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,12 @@
 		65560C861A23CB9000DF7B1B /* DrawTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65560C8B1A23CB9100DF7B1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65560C8C1A23CB9100DF7B1B /* DrawTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawTestTests.m; sourceTree = "<group>"; };
+		65FDEB4F1A2503D000AD7E0A /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		65FDEB501A2503D000AD7E0A /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		65FDEB511A2503D000AD7E0A /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		65FDEB521A2503D000AD7E0A /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		65FDEB571A25040000AD7E0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		65FDEB591A25040C00AD7E0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FDEB5A1A25040C00AD7E0A /* AudioToolbox.framework in Frameworks */,
+				65FDEB581A25040000AD7E0A /* AVFoundation.framework in Frameworks */,
+				65FDEB561A2503D000AD7E0A /* Slt.framework in Frameworks */,
+				65FDEB551A2503D000AD7E0A /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +83,7 @@
 		65560C641A23CB9000DF7B1B = {
 			isa = PBXGroup;
 			children = (
+				65FDEB4E1A2503D000AD7E0A /* Frameworks */,
 				65560C6F1A23CB9000DF7B1B /* DrawTest */,
 				65560C891A23CB9100DF7B1B /* DrawTestTests */,
 				65560C6E1A23CB9000DF7B1B /* Products */,
@@ -89,6 +110,8 @@
 				65560C7D1A23CB9000DF7B1B /* Images.xcassets */,
 				65560C7F1A23CB9000DF7B1B /* LaunchScreen.xib */,
 				65560C701A23CB9000DF7B1B /* Supporting Files */,
+				6523AFBA1AB0F78600140E11 /* words.txt */,
+				6523AFBC1AB0FDEA00140E11 /* ding.wav */,
 			);
 			path = DrawTest;
 			sourceTree = "<group>";
@@ -117,6 +140,20 @@
 				65560C8B1A23CB9100DF7B1B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65FDEB4E1A2503D000AD7E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65FDEB591A25040C00AD7E0A /* AudioToolbox.framework */,
+				65FDEB571A25040000AD7E0A /* AVFoundation.framework */,
+				65FDEB4F1A2503D000AD7E0A /* AcousticModelEnglish.bundle */,
+				65FDEB501A2503D000AD7E0A /* AcousticModelSpanish.bundle */,
+				65FDEB511A2503D000AD7E0A /* OpenEars.framework */,
+				65FDEB521A2503D000AD7E0A /* Slt.framework */,
+			);
+			name = Frameworks;
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				65560C7C1A23CB9000DF7B1B /* Main.storyboard in Resources */,
+				65FDEB541A2503D000AD7E0A /* AcousticModelSpanish.bundle in Resources */,
+				65FDEB531A2503D000AD7E0A /* AcousticModelEnglish.bundle in Resources */,
 				65560C811A23CB9000DF7B1B /* LaunchScreen.xib in Resources */,
+				6523AFBB1AB0F78600140E11 /* words.txt in Resources */,
 				65560C7E1A23CB9000DF7B1B /* Images.xcassets in Resources */,
+				6523AFBD1AB0FDEA00140E11 /* ding.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +384,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = DrawTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +398,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = DrawTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +461,7 @@
 				65560C921A23CB9100DF7B1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65560C931A23CB9100DF7B1B /* Build configuration list for PBXNativeTarget "DrawTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +470,7 @@
 				65560C951A23CB9100DF7B1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
